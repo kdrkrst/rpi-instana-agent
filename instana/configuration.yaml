@@ -122,9 +122,9 @@
 #  checksum_file_size: 10 # for checking checksum please mention the file size (in MB) limit
 
 # Hardware & Zone
-#com.instana.plugin.generic.hardware:
-#  enabled: true # disabled by default
-#  availability-zone: 'Datacenter A / Rack 42'
+com.instana.plugin.generic.hardware:
+  enabled: true # disabled by default
+  availability-zone: 'home-test'
 
 # AWS Services
 # Monitoring of all AWS Service are enabled by default except for AWS XRay.

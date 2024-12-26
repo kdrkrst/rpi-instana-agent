@@ -1,0 +1,16 @@
+name: Update Instana Agent Configuration
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: instana/github-action-update-agent-configurations@v1.0.0
+      with:
+        agent_zone: 'home-test'
+      env:
+        INSTANA_API_ENDPOINT: ${{ secrets.INSTANA_API_ENDPOINT }}
+        INSTANA_API_TOKEN: ${{ secrets.INSTANA_API_TOKEN }}
